@@ -1,6 +1,12 @@
 package air.co.kr.usefl.asamalarmex;
 
+import android.app.Activity;
+
 public class Config {
+	public static Activity MAIN_ACTIVITY = null;
+	public static final String DATA_BASE_NAME = "appAsamAlarm";
+	
+	
 	public static final String MSG_TITLE = "설정하신 아삼 알람시간입니다.";
 	
 	public static final String REGEN_ID_1 = "regen_1";
@@ -61,7 +67,6 @@ public class Config {
 	
 	public static final String USER_ID_3 = "user_3";
 	public static final int USER_CODE_3 = 43;
-	
 	
 	public Config() {
 	}

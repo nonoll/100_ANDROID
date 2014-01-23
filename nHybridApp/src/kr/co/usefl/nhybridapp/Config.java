@@ -1,5 +1,6 @@
 package kr.co.usefl.nhybridapp;
 
+import android.app.Activity;
 import android.widget.ProgressBar;
 
 public class Config {
@@ -9,6 +10,8 @@ public class Config {
 	public static final String APP_VERSION_MSG_2 = "최신버전입니다.";
 	public static final String WEB_VIEW_URL = "http://usefl.co.kr/app/hybridApp/";
 	public static final String NETWORK_MSG = "";
+	
+	public static Activity main = null;
 	
 	public static ProgressBar PROGRESS_BAR;
 	

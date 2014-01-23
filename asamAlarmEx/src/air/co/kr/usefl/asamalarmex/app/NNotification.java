@@ -1,5 +1,8 @@
-package air.co.kr.usefl.asamalarmex;
+package air.co.kr.usefl.asamalarmex.app;
 
+import air.co.kr.usefl.asamalarmex.MainActivity;
+import air.co.kr.usefl.asamalarmex.R;
+import air.co.kr.usefl.asamalarmex.R.drawable;
 import android.app.Notification;
 import android.app.NotificationManager;
 import android.app.PendingIntent;

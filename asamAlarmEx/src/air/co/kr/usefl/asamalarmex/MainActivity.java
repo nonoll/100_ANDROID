@@ -7,8 +7,12 @@ import java.util.Map;
 
 import com.google.ads.*;
 
+import air.co.kr.usefl.asamalarmex.app.NAlarmManager;
+import air.co.kr.usefl.asamalarmex.app.NDialog;
+import air.co.kr.usefl.asamalarmex.app.NNotification;
 import air.co.kr.usefl.asamalarmex.kakao.KakaoLink;
 import air.co.kr.usefl.asamalarmex.util.CurrencyFormat;
+import air.co.kr.usefl.asamalarmex.widget.NToast;
 import android.os.Bundle;
 import android.annotation.SuppressLint;
 import android.app.Activity;
@@ -17,6 +21,7 @@ import android.app.Dialog;
 import android.app.TimePickerDialog;
 import android.content.pm.PackageManager.NameNotFoundException;
 import android.content.res.Resources.Theme;
+import android.database.sqlite.SQLiteDatabase;
 import android.text.Spannable;
 import android.text.SpannableStringBuilder;
 import android.text.style.ForegroundColorSpan;
@@ -51,9 +56,8 @@ public class MainActivity extends Activity implements OnClickListener {
 	
 	private int hour;
 	private int minute;
- 
-	static final int TIME_DIALOG_ID = 999;
- 
+	
+	SQLiteDatabase db;
 	
 	static final int[] BTNS = {
 		R.id.btn_share,
@@ -79,6 +83,7 @@ public class MainActivity extends Activity implements OnClickListener {
 	}
 	
 	private void init() {
+		Config.MAIN_ACTIVITY = this;
 		_alarmManager = new NAlarmManager(getApplicationContext());
 		
 		drawDisplay();

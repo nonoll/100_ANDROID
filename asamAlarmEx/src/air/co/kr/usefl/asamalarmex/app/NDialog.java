@@ -1,6 +1,9 @@
-package air.co.kr.usefl.asamalarmex;
+package air.co.kr.usefl.asamalarmex.app;
 
 
+import air.co.kr.usefl.asamalarmex.Config;
+import air.co.kr.usefl.asamalarmex.R;
+import air.co.kr.usefl.asamalarmex.R.id;
 import air.co.kr.usefl.asamalarmex.util.CurrencyFormat;
 import android.app.TimePickerDialog;
 import android.content.Context;
